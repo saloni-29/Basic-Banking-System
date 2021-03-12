@@ -32,7 +32,7 @@
 {
     width:100%;
     height:100vh;
-    background-image:linear-gradient(to right, #f30606,#f30606,#f30606,#f30606,#f30606,#f30606);
+    background-image:linear-gradient(to right, #2a06f3,#2a06f3,#2a06f3,#2a06f3,#2a06f3,#2a06f3);
     clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 80%);
 }
 .main_text
