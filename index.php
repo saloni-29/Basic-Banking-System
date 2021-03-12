@@ -1,6 +1,6 @@
 <html>
 <head>
-<title></title>
+<title>TSF Banking</title>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -32,7 +32,7 @@
 {
     width:100%;
     height:100vh;
-    background-image:linear-gradient(to right, #8D54BF,#944BD3,#7A3DAF,#692C9F,#562284,#4B1C74);
+    background-image:linear-gradient(to right, #f30606,#f30606,#f30606,#f30606,#f30606,#f30606);
     clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 80%);
 }
 .main_text
@@ -100,7 +100,7 @@ box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
  
      <div class="navbar navbar-expand-md">
    
-      <a href="#" class="navbar-brand font-weight-bold text-white text-center"><h2>TSF BANK</h2></a>
+
       <button class="navbar-toggler text-white " type="button" data-toggle="collapse" data-target="#collapsenavbar">
       <span class="navbar-toggler-icon" style="background:white;"></span>
       </button>
@@ -124,12 +124,11 @@ box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
 
           <div class="col-sm-6">
             <h1 class="main_text">TSF BANK</h1>
-            <p class="big-text">People's Service</p>
           </div>
 
           <div class="col-sm-6">
             
-            <img src="images/12.png" class="img-fluid" width="560" height="345" style="margin-top:20px;">
+            <img src="images/logo.png" class="img-fluid" width="560" height="345" style="margin-top:20px;">
            
           </div>
 
