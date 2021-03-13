@@ -1,3 +1,75 @@
+<?php
+include 'connect.php';
+
+if(isset($_POST['submit']))
+{
+    $from = $_GET['id'];
+    $to = $_POST['to'];
+    $amount = $_POST['amount'];
+
+    $sql = "SELECT * from users where id=$from";
+    $query = mysqli_query($conn,$sql);
+    $sql1 = mysqli_fetch_array($query);
+
+    $sql = "SELECT * from users where id=$to";
+    $query = mysqli_query($conn,$sql);
+    $sql2 = mysqli_fetch_array($query);
+
+
+
+    //Conditions
+    //For negative value
+    if (($amount)<0)
+   {
+        echo '<script type="text/javascript">';
+        echo ' alert("Negative value cannot be transferred !")';
+        echo '</script>';
+    }
+    //Insufficient balance
+    else if($amount > $sql1['balance']) 
+    {
+        
+        echo '<script type="text/javascript">';
+        echo ' alert("Sorry! you have insufficient balance !")';
+        echo '</script>';
+    }
+    //For 0 (zero) value
+    else if($amount == 0){
+
+         echo "<script type='text/javascript'>";
+         echo "alert('Zero value cannot be transferred !')";
+         echo "</script>";
+     }
+
+
+    else {
+                $newbalance = $sql1['balance'] - $amount;
+                $sql = "UPDATE users set balance=$newbalance where id=$from";
+                mysqli_query($conn,$sql);
+             
+                $newbalance = $sql2['balance'] + $amount;
+                $sql = "UPDATE users set balance=$newbalance where id=$to";
+                mysqli_query($conn,$sql);
+                
+                $sender = $sql1['name'];
+                $receiver = $sql2['name'];
+                $sql = "INSERT INTO transaction(`sender`, `receiver`, `balance`) VALUES ('$sender','$receiver','$amount')";
+                $query=mysqli_query($conn,$sql);
+
+                if($query){
+                     echo "<script> alert('Transaction Successfully !');
+                                     window.location='history.php';
+                           </script>";
+                    
+                }
+
+                $newbalance= 0;
+                $amount =0;
+        }
+    
+}
+?>
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -43,24 +115,105 @@
             </div>
         </nav>
 
-          <div class="display_table">
-                 <h1>Customer Details</h1>
-                 <div class="center_div">
-               <div class="table-responsive">
+        <class class="welcome">
+            <h2>
+                <img src="logos/m1.webp" alt="Bank" width="75" height="75" style="font-weight: bold;"> <strong>Money
+                    Transfer</strong> <img src="logos/m2.webp" alt="Bank" width="75" height="75">
+            </h2>
+        </class>
+
+            <!-- options -->
+            <div class="d-grip gap-2 col-6 mx-auto text-center p-3 mb-2">
+                 <!-- <div class="mod"><button type="button" class="btn btn-primary btn-lg mb-3" data-bs-toggle="modal" data-bs-target="#mod">Send Money</button> -->
+                 <a href="history.php"><button type="button" class="btn btn-dark btn-lg mb-3">See all Transaction History</button></a>
+            </div>
+
+            <div class="display_table">
+                 <h1 class="text-center" >Customer Details</h1>
+                 
+                 <?php
+                 include 'connect.php';
+                 $sid=$_GET['id'];
+                 $sql = "SELECT * FROM  users where id=$sid";
+                 $result=mysqli_query($conn,$sql);
+                 if(!$result)
+                 {
+                    echo "Error : ".$sql."<br>".mysqli_error($conn);
+                 }
+                 $rows=mysqli_fetch_assoc($result);
+                 ?>
+                <form method="post" name="tcredit" class="tabletext" ><br>
+            </div>
+            <div class="center_div">
+                <div class="table-responsive">
                     <table>
-                    <thead>
-                     <tr>
-                     <th>ID</th>
-                      <th>Name</th>
-                      <th>Email</th>
-                       <th>Amount</th>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Balance</th>
                     
                       <th colspan="2">operation</th>
                     </tr>
                     </thead>
                    <tbody>
                   </div>
-          <?php
+
+          <div class="display_table">
+                 <h1>Customer Details</h1>
+                 <div class="center_div">
+               <div class="table-responsive">
+                    <table>
+                    <thead>
+                    <tr>
+                     <th>ID</th>
+                      <th>Name</th>
+                      <th>Email</th>
+                       <th>Amount</th>
+                       <th colspan="2">operation</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                </div>
+
+                <h2 class="text-center pt-4" style="color : black;">Transer Money Here !</h2>
+        <label style="color : black;"><strong>Transfer To:</strong></label>
+        <select name="to" class="form-control" required>
+            <option value="" disabled selected>Choose</option>
+            <?php
+                include 'connect.php';
+                $sid=$_GET['id'];
+                $sql = "SELECT * FROM users where id!=$sid";
+                $result=mysqli_query($conn,$sql);
+                if(!$result)
+                {
+                    echo "Error ".$sql."<br>".mysqli_error($conn);
+                }
+                while($rows = mysqli_fetch_assoc($result)) {
+            ?>
+                <option class="table" value="<?php echo $rows['id'];?>" >
+                
+                    <?php echo $rows['name'] ;?> (Balance: 
+                    <?php echo $rows['balance'] ;?> ) 
+               
+                </option>
+            <?php 
+                } 
+            ?>
+            <div>
+        </select>
+        <br>
+        <br>
+            <label style="color : black;"><strong>Amount:</strong></label>
+            <input type="number" class="form-control" name="amount" required>   
+            <br><br>
+                <div class="text-center" >
+                <button class="btn btn-outline-dark mb-3" name="submit" type="submit" id="myBtn" >Fill the Amount and Transfer</button>
+            </div>
+        </form>
+    </div>    
+          <!--<?php
           include 'connect.php';
           $selectquery = " select * from users";
           $query = mysqli_query($con,$selectquery);
@@ -73,12 +226,12 @@
                <td><?php  echo $res['ID']; ?></td>
                <td><?php echo $res['Name']; ?></td>
                <td><?php echo $res['Email']; ?></td>
-               <td><?php echo $res['Amount']; ?></td>
+               <td><?php echo $res['Balance']; ?></td>
               <td><a href="money.php?idtransfer=<?php  echo $res['ID']; ?>" ><i class=" fa fa-user-circle large" aria-hidden="true" style="color:#04FB73;"></i></a></td>
                </tr>
              <?php
           }
-           ?>
+           ?>-->
 
 
 </tbody>
