@@ -117,7 +117,7 @@ if(isset($_POST['submit']))
 
         <class class="welcome">
             <h2>
-                <img src="logos/m1.webp" alt="Bank" width="75" height="75" style="font-weight: bold;"> <strong>Money
+                <img src="images/6.png" alt="Bank" width="75" height="75" style="font-weight: bold;"> <strong>Money
                     Transfer</strong> <img src="logos/m2.webp" alt="Bank" width="75" height="75">
             </h2>
         </class>
@@ -177,7 +177,7 @@ if(isset($_POST['submit']))
                     <tbody>
                 </div>
 
-                <h2 class="text-center pt-4" style="color : black;">Transer Money Here !</h2>
+                <h2 class="text-center pt-4" style="color : black;">Transfer Money Here !</h2>
         <label style="color : black;"><strong>Transfer To:</strong></label>
         <select name="to" class="form-control" required>
             <option value="" disabled selected>Choose</option>
