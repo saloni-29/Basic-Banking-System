@@ -23,7 +23,7 @@
         <button class="navbar-toggler text-white " type="button" data-toggle="collapse" data-target="#collapsenavbar">
             <span class="navbar-toggler-icon" style="background:blue;"></span>
         </button>
-        <div class="collapse navbar-collapse text-center" id="collapsenavbar" span style="margin-left:90px;">
+        <div class="collapse navbar-collapse text-center" id="collapsenavbar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a href="index.php" class="nav-link text-white ">ABOUT</span></a></li>
