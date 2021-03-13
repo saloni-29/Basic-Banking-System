@@ -26,9 +26,9 @@
         <div class="collapse navbar-collapse text-center" id="collapsenavbar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="index.php" class="nav-link text-white "><span style="margin-right:90px;">ABOUT</span></a></li>
+                    <a href="index.php" class="nav-link text-white "><span style="margin-left:90px;">ABOUT</span></a></li>
                     <li class="nav-item dropdown py-3">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" span style="margin-right:90px:">Actions</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" span style="margin-left:90px:">Actions</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item py-3" href="money.php">Money Transfer</a></li>
                             <li><a class="dropdown-item py-3" href="history.php">Transaction History</a></li>
@@ -36,7 +36,7 @@
                         </ul>
                     </li>
                     <li class="nav-item py-3">
-                        <a class="nav-link" href="contact.php"><span style="margin-right:90px;">Contact Us</a>
+                        <a class="nav-link" href="contact.php"><span style="margin-left:90px;">Contact Us</a>
                     </li>
                 </ul>
             </div>
