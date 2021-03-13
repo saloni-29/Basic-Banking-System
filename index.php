@@ -32,8 +32,7 @@
                                 <li><a class="dropdown-item py-3" href="money.php">Money Transfer</a></li>
                                 <li><a class="dropdown-item py-3" href="history.php">Transaction History</a></li>
                                 <li><a class="dropdown-item py-3" href="viewcustomers.php">View Customers</a></li>
-                                </li>
-                            </ul>
+                                </li></ul>
                         <li class="nav-item py-3">
                             <a class="nav-link" href="contact.php">Contact Us</a>
                         </li>
