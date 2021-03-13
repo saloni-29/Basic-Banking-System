@@ -34,7 +34,7 @@
                                 <li><a class="dropdown-item py-3" href="viewcustomers.php">View Customers</a></li>
                                 </li></ul>
                         <li class="nav-item py-3">
-                            <a class="nav-link" href="contact.php"style="font-weight: bold;"><strong>Contact Us</strong></a>
+                            <a class="nav-link" href="contact.php" style="font-weight: bold;"><strong>Contact Us</strong></a>
                         </li>
                     </ul>
                  </div>
