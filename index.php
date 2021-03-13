@@ -23,10 +23,10 @@
         <button class="navbar-toggler text-white " type="button" data-toggle="collapse" data-target="#collapsenavbar">
             <span class="navbar-toggler-icon" style="background:blue;"></span>
         </button>
-        <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-8 mb-lg-0">
-                <li class="nav-item">
-                    <a href="index.php" class="nav-link text-white ">ABOUT</span></a></li>
+                <li class="nav-item py-3">
+                    <a href="index.php" class="nav-link text-white">ABOUT</span></a></li>
                     <li class="nav-item dropdown py-3">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Actions</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
