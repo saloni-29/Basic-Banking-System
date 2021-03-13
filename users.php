@@ -176,44 +176,8 @@ if(isset($_POST['submit']))
                     </thead>
                     <tbody>
                 </div>
-
-                <h2 class="text-center pt-4" style="color : black;">Transfer Money Here !</h2>
-        <label style="color : black;"><strong>Transfer To:</strong></label>
-        <select name="to" class="form-control" required>
-            <option value="" disabled selected>Choose</option>
-            <?php
-                include 'connect.php';
-                $sid=$_GET['id'];
-                $sql = "SELECT * FROM users where id!=$sid";
-                $result=mysqli_query($conn,$sql);
-                if(!$result)
-                {
-                    echo "Error ".$sql."<br>".mysqli_error($conn);
-                }
-                while($rows = mysqli_fetch_assoc($result)) {
-            ?>
-                <option class="table" value="<?php echo $rows['id'];?>" >
-                
-                    <?php echo $rows['name'] ;?> (Balance: 
-                    <?php echo $rows['balance'] ;?> ) 
-               
-                </option>
-            <?php 
-                } 
-            ?>
-            <div>
-        </select>
-        <br>
-        <br>
-            <label style="color : black;"><strong>Amount:</strong></label>
-            <input type="number" class="form-control" name="amount" required>   
-            <br><br>
-                <div class="text-center" >
-                <button class="btn btn-outline-dark mb-3" name="submit" type="submit" id="myBtn" >Fill the Amount and Transfer</button>
-            </div>
-        </form>
-    </div>    
-          <!--<?php
+    
+          <?php
           include 'connect.php';
           $selectquery = " select * from users";
           $query = mysqli_query($con,$selectquery);
@@ -231,7 +195,7 @@ if(isset($_POST['submit']))
                </tr>
              <?php
           }
-           ?>-->
+           ?>
 
 
 </tbody>
