@@ -34,7 +34,6 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item py-3" href="money.php">Money Transfer</a></li>
                                 <li><a class="dropdown-item py-3" href="history.php">Transaction History</a></li>
-                                <li><a class="dropdown-item py-3" href="viewcustomers.php">View Customers</a></li>
                                 </li></ul>
                         <li class="nav-item py-3">
                             <a class="nav-link text-white" href="contact.php"style="font-weight: bold;"><strong>Contact Us</strong></a>
@@ -62,8 +61,8 @@
                    <tbody>
                   </div>
           <?php
-          include 'connection.php';
-          $selectquery = " select * from banksystem";
+          include 'connect.php';
+          $selectquery = " select * from users";
           $query = mysqli_query($con,$selectquery);
           $numofrows = mysqli_num_rows($query);
 
@@ -75,7 +74,7 @@
                <td><?php echo $res['Name']; ?></td>
                <td><?php echo $res['Email']; ?></td>
                <td><?php echo $res['Amount']; ?></td>
-              <td><a href="transfermoney.php?idtransfer=<?php  echo $res['ID']; ?>" ><i class=" fa fa-user-circle large" aria-hidden="true" style="color:#04FB73;"></i></a></td>
+              <td><a href="money.php?idtransfer=<?php  echo $res['ID']; ?>" ><i class=" fa fa-user-circle large" aria-hidden="true" style="color:#04FB73;"></i></a></td>
                </tr>
              <?php
           }
