@@ -1,75 +1,3 @@
-<?php
-include 'connect.php';
-
-if(isset($_POST['submit']))
-{
-    $from = $_GET['id'];
-    $to = $_POST['to'];
-    $amount = $_POST['amount'];
-
-    $sql = "SELECT * from users where id=$from";
-    $query = mysqli_query($conn,$sql);
-    $sql1 = mysqli_fetch_array($query);
-
-    $sql = "SELECT * from users where id=$to";
-    $query = mysqli_query($conn,$sql);
-    $sql2 = mysqli_fetch_array($query);
-
-
-
-    //Conditions
-    //For negative value
-    if (($amount)<0)
-   {
-        echo '<script type="text/javascript">';
-        echo ' alert("Negative value cannot be transferred !")';
-        echo '</script>';
-    }
-    //Insufficient balance
-    else if($amount > $sql1['balance']) 
-    {
-        
-        echo '<script type="text/javascript">';
-        echo ' alert("Sorry! you have insufficient balance !")';
-        echo '</script>';
-    }
-    //For 0 (zero) value
-    else if($amount == 0){
-
-         echo "<script type='text/javascript'>";
-         echo "alert('Zero value cannot be transferred !')";
-         echo "</script>";
-     }
-
-
-    else {
-                $newbalance = $sql1['balance'] - $amount;
-                $sql = "UPDATE users set balance=$newbalance where id=$from";
-                mysqli_query($conn,$sql);
-             
-                $newbalance = $sql2['balance'] + $amount;
-                $sql = "UPDATE users set balance=$newbalance where id=$to";
-                mysqli_query($conn,$sql);
-                
-                $sender = $sql1['name'];
-                $receiver = $sql2['name'];
-                $sql = "INSERT INTO transaction(`sender`, `receiver`, `balance`) VALUES ('$sender','$receiver','$amount')";
-                $query=mysqli_query($conn,$sql);
-
-                if($query){
-                     echo "<script> alert('Transaction Successfully !');
-                                     window.location='history.php';
-                           </script>";
-                    
-                }
-
-                $newbalance= 0;
-                $amount =0;
-        }
-    
-}
-?>
-
 <!doctype html>
 <html lang="en">
     <head>
@@ -81,7 +9,6 @@ if(isset($_POST['submit']))
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>TSF BANK</title>
     <link rel="stylesheet" href="css/style1.css">
-    <link rel="stylesheet" href="css/style2.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
@@ -106,6 +33,7 @@ if(isset($_POST['submit']))
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item py-3" href="money.php">Money Transfer</a></li>
                                 <li><a class="dropdown-item py-3" href="history.php">Transaction History</a></li>
+                                <li><a class="dropdown-item py-3" href="users.php">View Customers</a></li>
                                 </li></ul>
                         <li class="nav-item py-3">
                             <a class="nav-link text-white" href="contact.php"style="font-weight: bold;"><strong>Contact Us</strong></a>
