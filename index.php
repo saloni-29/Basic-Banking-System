@@ -25,7 +25,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-8 mb-lg-0">
                         <li class="nav-item py-3">
-                            <a href="index.php" class="nav-link text-white">ABOUT</a></li>
+                            <a href="index.php" class="nav-link text-white text-right">ABOUT</a></li>
                         <li class="nav-item dropdown py-3">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Actions</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
