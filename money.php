@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>TSF BANK</title>
     <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style2.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     </head>
@@ -35,9 +36,8 @@
                         <li class="nav-item dropdown py-3">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: bold;"><strong>Actions</strong></a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item py-3" href="money.php">Money Transfer</a></li>
                                 <li><a class="dropdown-item py-3" href="history.php">Transaction History</a></li>
-                                <li><a class="dropdown-item py-3" href="viewcustomers.php">View Customers</a></li>
+                                <li><a class="dropdown-item py-3" href="users.php">View Customers</a></li>
                                 </li></ul>
                         <li class="nav-item py-3">
                             <a class="nav-link" href="contact.php"style="font-weight: bold;"><strong>Contact Us</strong></a>
@@ -46,12 +46,6 @@
                  </div>
             </div>
         </nav>
-
-        <class class="welcome text-center">
-            <h2>
-                <img src="images/logo1.webp" alt="Bank" width="75" height="75" style="font-weight: bold;"> <strong>Welcome To TSF Bank !</strong> <img src="images/trust.webp" alt="Bank" width="75" height="75">
-            </h2>
-        </class>
 
     <!-- options -->
     <div class="d-grip gap-2 col-6 mx-auto text-center p-3 mb-2">

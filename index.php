@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/style1.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    
     </head>
     
     <body>
@@ -31,10 +33,10 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item py-3" href="money.php">Money Transfer</a></li>
                                 <li><a class="dropdown-item py-3" href="history.php">Transaction History</a></li>
-                                <li><a class="dropdown-item py-3" href="viewcustomers.php">View Customers</a></li>
+                                <li><a class="dropdown-item py-3" href="users.php">View Customers</a></li>
                                 </li></ul>
                         <li class="nav-item py-3">
-                            <a class="nav-link text-white" href="contact.php" style="font-weight: bold;"><strong>Contact Us</strong></a>
+                            <a class="nav-link text-white" href="contact.php"style="font-weight: bold;"><strong>Contact Us</strong></a>
                         </li>
                     </ul>
                  </div>
