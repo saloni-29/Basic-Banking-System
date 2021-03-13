@@ -19,30 +19,21 @@
     <!-- Nav bar -->
     <nav class="navbar py-2 navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand font-weight-bold text-white text-center"><h2>TSF BANK</h2></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-8 mb-lg-0">
-                    <li class="nav-item py-3">
-                        <a class="nav-link" aria-current="page" href="index.php"><strong>Home</strong></a>
-                    </li>
+        <a href="#" class="navbar-brand font-weight-bold text-white text-center"><h2>TSF BANK</h2></a>
+        <button class="navbar-toggler text-white " type="button" data-toggle="collapse" data-target="#collapsenavbar">
+            <span class="navbar-toggler-icon" style="background:white;"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="index.php" class="nav-link text-white "><span style="margin-left:90px;">ABOUT</span></a></li>
                     <li class="nav-item dropdown py-3">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Actions
-                        </a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Actions</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item py-3" href="money.php">Money Transfer</a></li>
-                            <li><a class="dropdown-item py-3" href="#">Transaction History</a></li>
+                            <li><a class="dropdown-item py-3" href="history.php">Transaction History</a></li>
                             <li><a class="dropdown-item py-3" href="viewcustomers.php">View Customers</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item py-3">
-                        <a class="nav-link" href="https://www.thesparksfoundationsingapore.org/ "target="_blank">About</a>
                     </li>
                     <li class="nav-item py-3">
                         <a class="nav-link" href="contact.php">Contact Us</a>
