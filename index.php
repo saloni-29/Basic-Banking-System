@@ -49,7 +49,7 @@
         </class>
     
         <!-- Carousel -->
-        <div id="carouselSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-interval=500>
+        <div id="carouselSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-interval=100>
             <div class="carousel-inner">
                  <ol class="carousel-indicators">
                      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
@@ -68,16 +68,6 @@
                 <div class="carousel-item">
                     <img src="background/bg3.jpg" width="100" height="500" class="d-block w-100" alt="...">
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </a>
-            </div>
-    </div>
   
         <!-- footer -->
         <div class="foot">
