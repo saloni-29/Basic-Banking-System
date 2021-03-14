@@ -5,6 +5,7 @@
     box-sizing:border-box;
 }
 
+
 .footer
 {
     width:100%;
@@ -20,6 +21,13 @@
     justify-content: center;
     text-align:center;
 }
+
+*{
+    margin:0;
+    padding:0;
+   box-sizing:border-box;
+}
+
 .display_table
 {
     width:100vw;
