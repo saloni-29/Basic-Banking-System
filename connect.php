@@ -3,12 +3,12 @@
 $username = "id15696174_customer";
 $password="";
 $server ="localhost";
-$db = "bankuser";
+$db = "sql/sparks_bank";
 
 
 $con = mysqli_connect($server,$username,$password,$db);
 
-if($con)
+/*if($con)
 //echo "Connection successful";
 {
     ?>
