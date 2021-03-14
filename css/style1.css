@@ -10,9 +10,12 @@
     padding:0;
     box-sizing:border-box;
 }
-.navbar{
-  text-align: right
+ <style>
+.navbar-nav 
+{
+  margin-left: auto;
 }
+</style> 
 
 .container-fluid
 {
