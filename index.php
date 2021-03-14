@@ -51,7 +51,7 @@
         </class>
     
         <!-- Carousel -->
-        <div id="carouselSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel" data-interval=100>
+        <div id="carouselSlidesOnly" class="carousel slide carousel-fade" data-bt-ride="carousel" data-interval=100>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="background/bg1.jpg" width="100" height="500" class="d-block w-100" alt="...">
