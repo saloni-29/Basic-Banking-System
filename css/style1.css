@@ -21,10 +21,9 @@
 }
 
 .welcome h2{
-  margin: 10px;
-  padding: 5px;
-  width:100%
-  text-align: center;
+  width:100%;
+  white-space:nowrap;
+  background-color: #5E11A3;
   background-color: rgba(43, 40, 40, 0.993);
 }
 h3{
