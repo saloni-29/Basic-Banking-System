@@ -69,7 +69,7 @@
                 
                 <?php
                 include 'connect.php';
-                $selectquery = " select * from users";
+                $selectquery = " select * from bankuser";
                 $query = mysqli_query($con,$selectquery);
                 $numofrows = mysqli_num_rows($query);
                 while($res = mysqli_fetch_array($query))
@@ -77,22 +77,18 @@
                 {
                     ?>
                     <tr>
-                        <td><?php  echo $res['ID']; ?></td>
+                        <td><?php echo $res['ID']; ?></td>
                         <td><?php echo $res['Name']; ?></td>
                         <td><?php echo $res['Email']; ?></td>
                         <td><?php echo $res['Amount']; ?></td>
-                        <td><a href="transfermoney.php?idtransfer=<?php  echo $res['ID']; ?>" ><i class=" fa fa-user-circle large" aria-hidden="true" style="color:#04FB73;"></i></a></td>
+                        <td><a href="money.php?idtransfer=<?php  echo $res['ID']; ?>" ><i class=" fa fa-user-circle large" aria-hidden="true" style="color:#04FB73;"></i></a></td>
                </tr>
              <?php
           }
            ?>
-
-
-</tbody>
-</table>
-</div>
-
-</div>
+           </table>
+        </div>
+    </div>
 
         <!-- footer -->
         <div class="foot">
