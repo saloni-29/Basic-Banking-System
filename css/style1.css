@@ -17,6 +17,12 @@
     white-space:nowrap;
     background-color: #5E11A3;
 }
+.footer
+{
+    width:100%;
+    white-space:nowrap;
+    background-color: #5E11A3;
+}
 .container h2{
     text-align: center;
     background-color: rgb(255, 255, 255);
