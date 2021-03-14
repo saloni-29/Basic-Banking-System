@@ -1,14 +1,28 @@
 <?php
-	//Connection
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "bankuser";
 
-	$conn = mysqli_connect($servername, $username, $password, $dbname);
+$username = "id15696174_customer";
+$password="";
+$server ="localhost";
+$db = "id15696174_customerdetails";
 
-	if(!$conn){
-		die("Could not connect to the database due to the following error --> ".mysqli_connect_error());
-	}
+
+$con = mysqli_connect($server,$username,$password,$db);
+
+if($con)
+//echo "Connection successful";
+{
+    ?>
+    <script>
+        alert('Connection Successful');
+    </script>
+    <?php
+}
+else
+{
+    echo "No connection";
+    die("no connection".mysqli_connect_error());//exit
+}
+
+
 
 ?>
