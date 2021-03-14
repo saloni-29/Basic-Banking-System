@@ -68,7 +68,7 @@
                 
                 <?php
                 include 'connect.php';
-                $selectquery = " select * from banksystem";
+                $selectquery = " select * from bankuser";
                 $query = mysqli_query($con,$selectquery);
                 $numofrows = mysqli_num_rows($query);
                 while($res = mysqli_fetch_array($query))
