@@ -14,7 +14,7 @@
 
     
     </head>
-        
+    
     <body>
         
         <!-- Nav bar -->
@@ -47,9 +47,9 @@
                 <img src="images/logo1.webp" alt="Bank" width="75" height="75" style="font-weight: bold;"> <strong>Welcome To TSF Bank !</strong> <img src="images/trust.webp" alt="Bank" width="75" height="75">
             </h2>
         </class>
-    
+        
         <!-- Carousel -->
-        <div id="carouselSlidesOnly" class="carousel slide carousel-fade" data-bt-ride="carousel" data-interval=100>
+        <div id="carouselSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-interval=100>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="background/bg1.jpg" width="100" height="500" class="d-block w-100" alt="...">
@@ -63,7 +63,9 @@
                 <div class="carousel-item">
                     <img src="background/bg3.jpg" width="100" height="500" class="d-block w-100" alt="...">
                 </div>
-  
+            </div>
+        </div>
+        
         <!-- footer -->
         <div class="foot">
           <footer class="text-center text-white bg-dark">
