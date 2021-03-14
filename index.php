@@ -69,7 +69,7 @@
         
         <!-- footer -->
         <div class="foot">
-          <footer class="bg-dark text-center text-white">
+          <footer class="text-center text-white bg-dark">
                 
                 <!-- Copyright -->
                 <div class="text-center p-3"  style= "background-color: #5E11A3">
