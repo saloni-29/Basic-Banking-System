@@ -57,15 +57,15 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="background/bg1.jpg" width="1000" height="375" class="d-block w-100" alt="...">
+                <img src="images/bg1.jpg" width="1000" height="375" class="d-block w-100" alt="...">
 
             </div>
             <div class="carousel-item">
-                <img src="background/bg2.jfif" width="1000" height="375" class="d-block w-100" alt="...">
+                <img src="images/bg2.jfif" width="1000" height="375" class="d-block w-100" alt="...">
 
             </div>
             <div class="carousel-item">
-                <img src="background/bg3.jfif" width="1000" height="375" class="d-block w-100" alt="...">
+                <img src="images/bg3.jfif" width="1000" height="375" class="d-block w-100" alt="...">
 
             </div>
         </div>
