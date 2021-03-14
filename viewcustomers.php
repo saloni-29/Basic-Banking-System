@@ -56,11 +56,11 @@
             <a href="history.php"><button type="button" class="btn btn-dark btn-lg mb-3">Transaction History</button></a>
         </div>
 
-        <div class="col-sm-6">
+         <div class="col-sm-6">
             
-            <img src="images/12.png" class="img-fluid" width="560" height="345" style="margin-center:20px;">
+            <img src="images/12.png" class="img-fluid" width="560" height="345" style="margin-top:20px;">
            
-          </div>
+        </div>
         
         <div class="display_table">
             <h1>Customer Details</h1>
