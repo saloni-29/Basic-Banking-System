@@ -51,12 +51,6 @@
         
         <!-- options -->
 
-        <div class="col-sm-6">
-            
-            <img src="images/12.png" class="img-fluid" width="200" height="200" style="margin-top:20px;">
-           
-        </div>
-        
         <div class="d-grip gap-2 col-6 mx-auto text-center p-3 mb-2">
             <!-- <div class="mod"><button type="button" class="btn btn-primary btn-lg mb-3" data-bs-toggle="modal" data-bs-target="#mod">Send Money</button> -->
             <a href="history.php"><button type="button" class="btn btn-dark btn-lg mb-3">Transaction History</button></a>
