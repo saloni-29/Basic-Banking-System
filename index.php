@@ -18,7 +18,7 @@
     <body>
         
         <!-- Nav bar -->
-        <nav class="navbar py-2 navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar py-2 navbar-expand-lg ml-auto navbar-dark bg-dark">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand font-weight-bold text-white text-center"><h2>TSF BANK</h2></a>
                 <button class="navbar-toggler text-white " type="button" data-toggle="collapse" data-target="#collapsenavbar">
