@@ -11,7 +11,7 @@
     box-sizing:border-box;
 }
 .navbar{
-margin-right:30px;
+  text-align: right
 }
 
 .container-fluid
