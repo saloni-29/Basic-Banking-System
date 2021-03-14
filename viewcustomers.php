@@ -55,7 +55,8 @@
             <!-- <div class="mod"><button type="button" class="btn btn-primary btn-lg mb-3" data-bs-toggle="modal" data-bs-target="#mod">Send Money</button> -->
             <a href="history.php"><button type="button" class="btn btn-dark btn-lg mb-3">Transaction History</button></a>
         </div>
-        <img src="images/6.png" alt="Bank" width="100" height="150">
+    
+    </n img src="images/6.png" alt="Bank" width="200" height="150">
         
         <div class="display_table">
             <h1>Customer Details</h1>
