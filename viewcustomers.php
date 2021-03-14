@@ -42,12 +42,6 @@
                  </div>
             </div>
         </nav>
-
-        <class class="welcome">
-            <h2>
-                <img src="" alt="Bank" width="75" height="75" style="font-weight: bold;"> <strong>Money Transfer</strong> <img src="images/m2.webp" alt="Bank" width="75" height="75">
-            </h2>
-        </class>
         
         <!-- options -->
 
