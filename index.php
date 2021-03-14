@@ -51,6 +51,11 @@
         <!-- Carousel -->
         <div id="carouselSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-interval=500>
             <div class="carousel-inner">
+                 <ol class="carousel-indicators">
+                     <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                     <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                     <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                </ol>
                 <div class="carousel-item active">
                     <img src="background/bg1.jpg" width="100" height="500" class="d-block w-100" alt="...">
                 </div>
