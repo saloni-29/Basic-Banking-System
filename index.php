@@ -52,16 +52,16 @@
         <div id="carouselSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel" data-interval=500>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/bg1.jpg" width="100" height="500" class="d-block w-100" alt="Responsive image" class="img-thumbnail" >
+                    <img src="images/bg1.jpg" width="100" height="500" class="d-block w-100" alt="..." >
                 </div>
                 <div class="carousel-item">
-                    <img src="images/bg2.jfif" width="100" height="500" class="d-block w-100" alt="Responsive image" class="img-thumbnail">
+                    <img src="images/bg2.jfif" width="100" height="500" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/bg3.jfif" width="100" height="500" class="d-block w-100" alt="Responsive image" class="img-thumbnail">
+                    <img src="images/bg3.jfif" width="100" height="500" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/bg3.jpg" width="100" height="500" class="d-block w-100" alt="Responsive image" class="img-thumbnail">
+                    <img src="images/bg3.jpg" width="100" height="500" class="d-block w-100" alt="...">
                 </div>
             </div>
         </div>
