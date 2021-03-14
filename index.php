@@ -33,7 +33,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item py-3" href="money.php">Money Transfer</a></li>
                                 <li><a class="dropdown-item py-3" href="history.php">Transaction History</a></li>
-                                <li><a class="dropdown-item py-3" href="users.php">View Customers</a></li>
+                                <li><a class="dropdown-item py-3" href="viewcustomers.php">View Customers</a></li>
                                 </li></ul>
                         <li class="nav-item py-3">
                             <a class="nav-link text-white" href="contact.php"style="font-weight: bold;"><strong>Contact Us</strong></a>
@@ -53,16 +53,16 @@
         <div id="carouselSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel" data-interval=500>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/bg1.jpg" width="100" height="450" class="d-block w-100" alt="Responsive image" class="img-thumbnail" >
+                    <img src="images/bg1.jpg" width="100" height="500" class="d-block w-100" alt="Responsive image" class="img-thumbnail" >
                 </div>
                 <div class="carousel-item">
-                    <img src="images/bg2.jfif" width="100" height="450" class="d-block w-100" alt="...">
+                    <img src="images/bg2.jfif" width="100" height="500" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/bg3.jfif" width="100" height="450" class="d-block w-100" alt="...">
+                    <img src="images/bg3.jfif" width="100" height="500" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/bg3.jpg" width="100" height="450" class="d-block w-100" alt="...">
+                    <img src="images/bg3.jpg" width="100" height="500" class="d-block w-100" alt="...">
                 </div>
             </div>
         </div>
