@@ -69,7 +69,7 @@
         
         <!-- footer -->
         <div class="foot">
-           <footer class="text-center text-lg-start bg-dark">
+           <footer class="text-center text-expand-lg bg-dark">
                 
                 <!-- Copyright -->
                 <div class="text-center py-3  style= background-color: #5E11A3">
