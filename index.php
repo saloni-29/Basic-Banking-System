@@ -14,8 +14,6 @@
 
     
     </head>
-    
-    <body>
         
     <body>
         
@@ -69,14 +67,15 @@
         <!-- footer -->
         <div class="foot">
           <footer class="text-center text-white bg-dark">
-              <!-- Copyright -->
-               <div class="text-center p-3"  style= "background-color: #5E11A3">
-                   © 2021 Copyright - Made with 🧡 by Saloni Raorane :
-                   <a class="text-dark" href="https://www.thesparksfoundationsingapore.org/" target="_blank"> The Sparks Foundation <img src="images/tsf.png" alt="" width="40" height="35"></a>
-               </div>
-              <!-- Copyright -->
-           </footer>
-       </div>
+                
+                <!-- Copyright -->
+                <div class="text-center p-3"  style= "background-color: #5E11A3">
+                    © 2021 Copyright - Made with 🧡 by Saloni Raorane :
+                    <a class="text-dark" href="https://www.thesparksfoundationsingapore.org/" target="_blank"> The Sparks Foundation <img src="images/tsf.png" alt="" width="40" height="35"></a>
+                </div>
+               <!-- Copyright -->
+            </footer>
+        </div>
         
         
         
