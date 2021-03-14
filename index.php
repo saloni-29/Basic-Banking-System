@@ -18,7 +18,7 @@
     <body>
         
         <!-- Nav bar -->
-        <nav class="navbar py-2 navbar-expand-md navbar-dark bg-dark">
+        <nav class="navbar py-2 navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand font-weight-bold text-white text-center"><h2>TSF BANK</h2></a>
                 <button class="navbar-toggler text-white " type="button" data-toggle="collapse" data-target="#collapsenavbar">
@@ -28,13 +28,13 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item py-3">
                             <a href="index.php" class="nav-link text-white"><strong>About</strong></a></li>
-                        <li class="nav-item dropdown py-3">
+                        <li class="nav-item dropdown py-3 ml-auto">
                             <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: bold;"><strong>Transactions</strong></a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item py-3" href="money.php">Money Transfer</a></li>
                                 <li><a class="dropdown-item py-3" href="history.php">Transaction History</a></li>
                                 </li></ul>
-                        <li class="nav-item py-3">
+                        <li class="nav-item py-3 ml-auto">
                             <a class="nav-link text-white" href="contact.php"style="font-weight: bold;"><strong>Contact Us</strong></a>
                         </li>
                     </ul>
