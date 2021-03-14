@@ -33,7 +33,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item py-3" href="money.php">Money Transfer</a></li>
                                 <li><a class="dropdown-item py-3" href="history.php">Transaction History</a></li>
-                                <li><a class="dropdown-item py-3" href="viewcustomers.php">View Customers</a></li>
+                                <li><a class="dropdown-item py-3" href="users.php">View Customers</a></li>
                                 </li></ul>
                         <li class="nav-item py-3">
                             <a class="nav-link text-white" href="contact.php"style="font-weight: bold;"><strong>Contact Us</strong></a>
@@ -72,7 +72,7 @@
             <footer class="bg-light text-center text-lg-start">
                 
                 <!-- Copyright -->
-                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                <div class="text-center p-3" style="background-color: #5E11A3">
                     © 2021 Copyright - Made with 🧡 by Saloni Raorane :
                     <a class="text-dark" href="https://www.thesparksfoundationsingapore.org/" target="_blank"> The Sparks Foundation <img src="images/tsf.png" alt="" width="40" height="35"></a>
                 </div>
