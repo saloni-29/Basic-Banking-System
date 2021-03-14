@@ -49,113 +49,46 @@
                     Transfer</strong> <img src="images/m2.webp" alt="Bank" width="75" height="75">
             </h2>
         </class>
-
-            <!-- options -->
-            <div class="d-grip gap-2 col-6 mx-auto text-center p-3 mb-2">
-                 <!-- <div class="mod"><button type="button" class="btn btn-primary btn-lg mb-3" data-bs-toggle="modal" data-bs-target="#mod">Send Money</button> -->
-                 <a href="history.php"><button type="button" class="btn btn-dark btn-lg mb-3">Transaction History</button></a>
-            </div>
-
-            <div class="display_table">
-                 <h1 class="text-center" >Customer Details</h1>
-                 
-                 <?php
-                 include 'connect.php';
-                 $sid=$_GET['id'];
-                 $sql = "SELECT * FROM  users where id=$sid";
-                 $result=mysqli_query($conn,$sql);
-                 if(!$result)
-                 {
-                    echo "Error : ".$sql."<br>".mysqli_error($conn);
-                 }
-                 $rows=mysqli_fetch_assoc($result);
-                 ?>
-                <form method="post" name="tcredit" class="tabletext" ><br>
-            </div>
+        
+        <!-- options -->
+        
+        <div class="d-grip gap-2 col-6 mx-auto text-center p-3 mb-2">
+            <!-- <div class="mod"><button type="button" class="btn btn-primary btn-lg mb-3" data-bs-toggle="modal" data-bs-target="#mod">Send Money</button> -->
+            <a href="history.php"><button type="button" class="btn btn-dark btn-lg mb-3">Transaction History</button></a>
+        </div>
+        
+        <div class="display_table">
+            <h1>Customer Details</h1>
             <div class="center_div">
                 <div class="table-responsive">
                     <table>
                         <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Balance</th>
-                    
-                      <th colspan="2">operation</th>
-                    </tr>
-                    </thead>
-                   <tbody>
-                  </div>
-
-          <div class="display_table">
-                 <h1>Customer Details</h1>
-                 <div class="center_div">
-               <div class="table-responsive">
-                    <table>
-                    <thead>
-                    <tr>
-                     <th>ID</th>
-                      <th>Name</th>
-                      <th>Email</th>
-                       <th>Amount</th>
-                       <th colspan="2">operation</th>
-                    </tr>
-                    </thead>
-                    <tbody>
+                             <tr>
+                                 <th>ID</th>
+                                 <th>Name</th>
+                                 <th>Email</th>
+                                  <th>Amount</th>
+                                  <th colspan="2">operation</th>
+                             </tr>
+                        </thead>
+                    </table>
                 </div>
-
-                <h2 class="text-center pt-4" style="color : black;">Transfer Money Here !</h2>
-        <label style="color : black;"><strong>Transfer To:</strong></label>
-        <select name="to" class="form-control" required>
-            <option value="" disabled selected>Choose</option>
-            <?php
-                include 'connect.php';
-                $sid=$_GET['id'];
-                $sql = "SELECT * FROM users where id!=$sid";
-                $result=mysqli_query($conn,$sql);
-                if(!$result)
-                {
-                    echo "Error ".$sql."<br>".mysqli_error($conn);
-                }
-                while($rows = mysqli_fetch_assoc($result)) {
-            ?>
-                <option class="table" value="<?php echo $rows['id'];?>" >
                 
-                    <?php echo $rows['name'] ;?> (Balance: 
-                    <?php echo $rows['balance'] ;?> ) 
-               
-                </option>
-            <?php 
-                } 
-            ?>
-            <div>
-        </select>
-        <br>
-        <br>
-            <label style="color : black;"><strong>Amount:</strong></label>
-            <input type="number" class="form-control" name="amount" required>   
-            <br><br>
-                <div class="text-center" >
-                <button class="btn btn-outline-dark mb-3" name="submit" type="submit" id="myBtn" >Fill the Amount and Transfer</button>
-            </div>
-        </form>
-    </div>    
-          <?php
-          include 'connect.php';
-          $selectquery = " select * from users";
-          $query = mysqli_query($con,$selectquery);
-          $numofrows = mysqli_num_rows($query);
-
-           while($res = mysqli_fetch_array($query))
-          {
-            ?>
-               <tr>
-               <td><?php  echo $res['ID']; ?></td>
-               <td><?php echo $res['Name']; ?></td>
-               <td><?php echo $res['Email']; ?></td>
-               <td><?php echo $res['Balance']; ?></td>
-              <td><a href="money.php?idtransfer=<?php  echo $res['ID']; ?>" ><i class=" fa fa-user-circle large" aria-hidden="true" style="color:#04FB73;"></i></a></td>
+                <?php
+                include 'connect.php';
+                $selectquery = " select * from banksystem";
+                $query = mysqli_query($con,$selectquery);
+                $numofrows = mysqli_num_rows($query);
+                while($res = mysqli_fetch_array($query))
+                
+                {
+                    ?>
+                    <tr>
+                        <td><?php  echo $res['ID']; ?></td>
+                        <td><?php echo $res['Name']; ?></td>
+                        <td><?php echo $res['Email']; ?></td>
+                        <td><?php echo $res['Amount']; ?></td>
+                        <td><a href="transfermoney.php?idtransfer=<?php  echo $res['ID']; ?>" ><i class=" fa fa-user-circle large" aria-hidden="true" style="color:#04FB73;"></i></a></td>
                </tr>
              <?php
           }
@@ -168,15 +101,12 @@
 
 </div>
 
-</div>
- </div>
-
         <!-- footer -->
         <div class="foot">
-            <footer class="bg-light text-center text-lg-start">
+          <footer class="text-center text-white bg-dark">
                 
                 <!-- Copyright -->
-                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                <div class="text-center p-3"  style= "background-color: #5E11A3">
                     © 2021 Copyright - Made with 🧡 by Saloni Raorane :
                     <a class="text-dark" href="https://www.thesparksfoundationsingapore.org/" target="_blank"> The Sparks Foundation <img src="images/tsf.png" alt="" width="40" height="35"></a>
                 </div>
