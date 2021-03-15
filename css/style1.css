@@ -6,13 +6,14 @@
   box-sizing:border-box;
 }
 
- <style>
+
 .navbar-nav 
 {
   margin-left: auto;
-  background-color: #5E11A3
+  background-color: #5E11A3;
+
 }
-</style> 
+
 
 .container-fluid
 {
