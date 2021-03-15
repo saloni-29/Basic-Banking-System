@@ -57,14 +57,14 @@
 
     <class class="welcome">
         <h2>
-            <img src="logos/m1.webp" alt="Bank" width="75" height="75" style="font-weight: bold;"> <strong>Money
-                Transfer</strong> <img src="logos/m2.webp" alt="Bank" width="75" height="75">
+            <img src="images/m1.webp" alt="Bank" width="75" height="75" style="font-weight: bold;"> <strong>Money
+                Transfer</strong> <img src="images/m2.webp" alt="Bank" width="75" height="75">
         </h2>
     </class>
 
     <!-- options -->
     <div class="d-grip gap-2 col-6 mx-auto text-center p-3 mb-2">
-        <a href="history.php"><button type="button" class="btn btn-primary btn-lg mb-3">See all Transaction History</button></a>
+        <a href="history.php"><button type="button" class="btn btn-primary btn-lg mb-3">Transaction History</button></a>
     </div>
     </div>
 
