@@ -1,9 +1,7 @@
 <?php
-echo "Welcome to the stage where we are ready to get connected to a database <br>";
-
 // Connecting to the Database
 $servername = "localhost";
-$username = "root";
+$username = "pma";
 $password = "";
 $dbname = "bankuser";
 
