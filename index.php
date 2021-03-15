@@ -22,14 +22,14 @@
     <body>
         
         <!-- Nav bar -->
-        <nav class="navbar py-2 navbar-expand-lg ml-auto navbar-dark bg-dark">
+        <nav class="navbar py-2 navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand font-weight-bold text-white text-center"><h2>TSF BANK</h2></a>
                 <button class="navbar-toggler text-white " type="button" data-toggle="collapse" data-target="#collapsenavbar">
                     <span class="navbar-toggler-icon" style="background:white;"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsenavbar">
-                    <ul class="navbar-nav ml-auto mb-8 mb-lg-0">
+                    <ul class="navbar-nav mb-8 mb-lg-0">
                         <li class="nav-item py-3">
                             <a href="index.php" class="nav-link text-white"><strong>About</strong></a></li>
                         <li class="nav-item dropdown py-3">
