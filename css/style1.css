@@ -5,11 +5,13 @@
   padding:0;
   box-sizing:border-box;
 }
+
+ <style>
+.navbar-nav 
 {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+  margin-left: auto;
 }
+</style> 
 
 .container-fluid
 {
