@@ -13,6 +13,10 @@
     white-space:nowrap;
     background-color: #5E11A3;
 }
+.navbar-nav
+{
+  margin-left: auto;
+}
 
 .container h2{
     text-align: center;
