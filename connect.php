@@ -1,13 +1,18 @@
 <?php
-	//Connection
-	$servername = "127.0.0.1";
-	$username = "root";
-	$password = "";
-	$dbname = "bankuser";
+echo "Welcome to the stage where we are ready to get connected to a database <br>";
 
-	$conn = mysqli_connect($servername, $username, $password, $dbname);
-?>
-	/*if(!$conn){
-		die("Could not connect to the database due to the following error --> ".mysqli_connect_error());
-	}*\
+// Connecting to the Database
+$servername = "localhost";
+$username = "root";
+$password = "";
 
+// Create a connection
+$conn = mysqli_connect($servername, $username, $password);
+
+// Die if connection was not successful
+if (!$conn){
+    die("Sorry we failed to connect: ". mysqli_connect_error());
+}
+else{
+    echo "Connection was successful";
+}
