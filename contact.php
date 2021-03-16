@@ -42,7 +42,7 @@
 
           <!--contact starts-->
         <class class="welcome">
-            <a href="#" class="navbar-brand text-Black font-weight-bold text-center"><h2><strong>We are here to help you !</strong><img src="images/trust.webp" alt="Bank" width="75" height="75"></h2>
+            <a href="#" class="navbar-brand font-weight-bold text-center"><h2><strong>We are here to help you !</strong><img src="images/trust.webp" alt="Bank" width="75" height="75"></h2>
         </class>
             
             <div class="container">
