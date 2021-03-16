@@ -47,7 +47,7 @@
             
             <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offet-md-2-col col-1">
+                <div class="col-lg-6 col-md-6 col-10 offset-lg-2 offet-md-2-col col-1">
                     <form>
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Enter name" id="username" required autocomplete="off">
@@ -60,7 +60,9 @@
                             <label for="comment">Comment:</label>
                             <textarea class="form-control" rows="4" id="comment" placeholder="Your Comments"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <div class="formbutton" style="display: flex;justify-content: center;">
+                        <button type="submit" >Submit</button></div>
+                      
                     </form>
                 </div>
                 </div>
