@@ -1,6 +1,6 @@
 <?php
 // Connecting to the Database
-$servername = "localhost";
+$servername = "customerdetails";
 $username = "pma";
 $password = "";
 $dbname = "bankuser";
