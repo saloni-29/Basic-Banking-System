@@ -45,7 +45,7 @@
             <a href="#" class="navbar-brand font-weight-bold text-center"><h2><strong>We are here to help you !</strong><img src="images/trust.webp" alt="Bank" width="75" height="75"></h2>
         </class>
             
-            <div class="col-4 mx-auto text-center p-3 mb-2">
+            <div class="col-6 mx-auto p-3 mb-2">
                 <img src="images/12.png" class="img-fluid" alt= " " width="200" height="200" >
             </class>
             
