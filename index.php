@@ -32,7 +32,7 @@
                             <a class="nav-link text-white" href="money.php"style="font-weight: bold;"><strong>Money Transfer</strong></a>
                         </li>
                         <li class="nav-item py-3">
-                            <a class="nav-link text-white" href="histoy.php"style="font-weight: bold;"><strong>Transfer History</strong></a>
+                            <a class="nav-link text-white" href="history.php"style="font-weight: bold;"><strong>Transfer History</strong></a>
                         </li>
                         <li class="nav-item py-3">
                             <a class="nav-link text-white" href="contact.php"style="font-weight: bold;"><strong>Contact Us</strong></a>
