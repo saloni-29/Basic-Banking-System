@@ -47,7 +47,7 @@
             
             <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-10 offset-lg-2 offet-md-2-col col-1">
+                <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offet-md-2-col col-1">
                     <form>
                         <div class="form-group">
                             <label for="name" class="form-label">Name</label>
@@ -55,7 +55,7 @@
                         </div>
                         <div class="form">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="email" class="form-control" placeholder="Enter Email" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
                             <label for="comment">Comment:</label>
