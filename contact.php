@@ -40,30 +40,43 @@
             </div>
         </nav>
 
-    <class class="welcome">
-        <a href="#" class="navbar-brand font-weight-bold text-white text-center"><h2> <strong>We are here to help you !</strong> <img src="images/trust.webp" alt="Bank" width="75" height="75">
-        </h2>
-    </class>
- 
-    <!-- Form -->
-    <div class="container my-1">
-        <h3>Contact Us</h3>
-   
-        <form>
-            <div class="form">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <!--contact starts-->
+        <class class="welcome">
+            <a href="#" class="navbar-brand font-weight-bold text-white text-center">
+                <h2><strong>We are here to help you ! And Answer Any Questions You Might Have.We Look Forward To Hearing From You</strong>
+                    <img src="images/trust.webp" alt="Bank" width="75" height="75">
+                </h2>
+        </class>
+            
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offet-md-2-col col-1">
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                          
+                          <input type="text" class="form-control" placeholder="Enter name" id="username" required autocomplete="off">
+                        </div>
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                              
+                              <input type="email" class="form-control" placeholder="Enter email" id="email" required autocomplete="off">
+                            </div>
+                            <form action="/action_page.php">
+                                <div class="form-group">
+                                  
+                                  <input type="number" class="form-control" placeholder="Enter mobile number" id="mobile" required autocomplete="off">
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment">Comment:</label>
+                                    <textarea class="form-control" rows="4" id="comment" placeholder="Your Comments"></textarea>
+                                  </div>
+                                  <div class="formbutton" style="display: flex;justify-content: center;">
+                        <button type="submit" >Submit</button></div>
+                      </form>
+                </div>
             </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Your message</label>
-              <br>
-              <!-- <input type="password" class="form-control" id="exampleInputPassword1"> -->
-              <textarea name="" id="" cols="70" rows="10"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
         </div>
+       </section>
 
         <!-- footer -->
         <div class="foot">
