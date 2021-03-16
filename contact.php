@@ -48,31 +48,24 @@
             <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offet-md-2-col col-1">
-                    <div class="form-group">
-                          
-                          <input type="text" class="form-control" placeholder="Enter name" id="username" required autocomplete="off">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter name" id="username" required autocomplete="off">
                         </div>
-                        <form action="/action_page.php">
-                            <div class="form-group">
-                              
-                              <input type="email" class="form-control" placeholder="Enter email" id="email" required autocomplete="off">
-                            </div>
-                            <form action="/action_page.php">
-                                <div class="form-group">
-                                  
-                                  <input type="number" class="form-control" placeholder="Enter mobile number" id="mobile" required autocomplete="off">
-                                </div>
-                                <div class="form-group">
-                                    <label for="comment">Comment:</label>
-                                    <textarea class="form-control" rows="4" id="comment" placeholder="Your Comments"></textarea>
-                                  </div>
-                                  <div class="formbutton" style="display: flex;justify-content: center;">
-                        <button type="submit" >Submit</button></div>
-                      </form>
+                        <div class="form">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Comment:</label>
+                            <textarea class="form-control" rows="4" id="comment" placeholder="Your Comments"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
                 </div>
             </div>
-        </div>
-       </section>
+            
 
         <!-- footer -->
         <div class="foot">
