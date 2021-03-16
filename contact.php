@@ -61,7 +61,7 @@
                             <label for="comment">Comment:</label>
                             <textarea class="form-control" rows="4" id="comment" placeholder="Your Comments"></textarea>
                         </div>
-                        <div class="d-grip gap-1 col-4 mx-auto text-center p-3 mb-2">
+                        <div class="d-grip gap-1 col-4 mx-auto text-center p-2 mb-2">
                             <a href="money.php"><button type="button" class="btn btn-warning btn-lg mb-3">SUBMIT</button></a>
                         </div>
                       
