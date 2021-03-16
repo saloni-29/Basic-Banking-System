@@ -43,9 +43,7 @@
           <!--contact starts-->
         <class class="welcome">
             <a href="#" class="navbar-brand font-weight-bold text-white text-center">
-                <h2><strong>We are here to help you ! And Answer Any Questions You Might Have.We Look Forward To Hearing From You</strong>
-                    <img src="images/trust.webp" alt="Bank" width="75" height="75">
-                </h2>
+                <h2><strong>We are here to help you !</strong><img src="images/trust.webp" alt="Bank" width="75" height="75"></h2>
         </class>
             
             <div class="container">
