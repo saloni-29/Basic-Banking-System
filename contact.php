@@ -50,6 +50,7 @@
                 <div class="col-lg-6 col-md-6 col-10 offset-lg-2 offet-md-2-col col-1">
                     <form>
                         <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
                             <input type="text" class="form-control" placeholder="Enter name" id="username" required autocomplete="off">
                         </div>
                         <div class="form">
