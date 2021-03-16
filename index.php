@@ -30,7 +30,7 @@
                         <li class="nav-item py-3">
                             <a href="index.php" class="nav-link text-white"><strong>About</strong></a></li>
                         <li class="nav-item py-3">
-                            <a class="nav-link text-white" href="money.php"style="font-weight: bold;"><strong>Money Transfer</strong></a>
+                            <a class="nav-link text-white" href="users.php"style="font-weight: bold;"><strong>Money Transfer</strong></a>
                         </li>
                         <li class="nav-item py-3">
                             <a class="nav-link text-white" href="history.php"style="font-weight: bold;"><strong>Transfer History</strong></a>
