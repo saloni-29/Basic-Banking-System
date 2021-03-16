@@ -57,7 +57,7 @@ if(isset($_POST['submit']))
                 $query=mysqli_query($conn,$sql);
 
                 if($query){
-                     echo "<script> alert('Transaction Successfully !');
+                     echo "<script> alert('Transaction Successfull!');
                                      window.location='history.php';
                            </script>";
                     
@@ -82,58 +82,49 @@ if(isset($_POST['submit']))
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>TSF BANK</title>
+    <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/style2.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Nav bar -->
-    <nav class="navbar py-2 navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">TSF BANK <img src="logos/logo.webp" alt="Bank" width="50" height="50"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-8 mb-lg-0">
-                    <li class="nav-item py-3">
-                        <a class="nav-link" aria-current="page" href="index.php"><strong>Home</strong></a>
-                    </li>
-                    <li class="nav-item dropdown py-3">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Actions
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item py-3" href="money.php">Money Transfer</a></li>
-                            <li><a class="dropdown-item py-3" href="history.php">Transaction History</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item py-3">
-                        <a class="nav-link" href="https://www.thesparksfoundationsingapore.org/ "
-                            target="_blank">About</a>
-                    </li>
-                    <li class="nav-item py-3">
-                        <a class="nav-link" href="contact.php">Contact Us</a>
-                    </li>
-                </ul>
+        
+        <!-- Nav bar -->
+        <nav class="navbar py-2 navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand font-weight-bold text-white text-center"><h2>TSF BANK</h2></a>
+                <button class="navbar-toggler text-white " type="button" data-toggle="collapse" data-target="#collapsenavbar">
+                    <span class="navbar-toggler-icon" style="background:white;"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-8 mb-lg-0">
+                        <li class="nav-item py-3">
+                            <a href="index.php" class="nav-link text-white"><strong>About</strong></a></li>
+                        <li class="nav-item dropdown py-3">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: bold;"><strong>Transactions</strong></a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item py-3" href="money.php">Money Transfer</a></li>
+                                <li><a class="dropdown-item py-3" href="history.php">Transaction History</a></li>
+                                </li></ul>
+                        <li class="nav-item py-3">
+                            <a class="nav-link text-white" href="contact.php"style="font-weight: bold;"><strong>Contact Us</strong></a>
+                        </li>
+                    </ul>
+                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
     <class class="welcome">
         <h2>
-            <img src="logos/m1.webp" alt="Bank" width="75" height="75" style="font-weight: bold;"> <strong>Money
-                Transfer</strong> <img src="logos/m2.webp" alt="Bank" width="75" height="75">
+            <img src="images/m1.webp" alt="Bank" width="75" height="75" style="font-weight: bold;"> <strong>Money
+                Transfer</strong> <img src="images/m2.webp" alt="Bank" width="75" height="75">
         </h2>
     </class>
 
     <!-- options -->
     <div class="d-grip gap-2 col-6 mx-auto text-center p-3 mb-2">
         <!-- <div class="mod"><button type="button" class="btn btn-primary btn-lg mb-3" data-bs-toggle="modal" data-bs-target="#mod">Send Money</button> -->
-        <a href="history.php"><button type="button" class="btn btn-dark btn-lg mb-3">See all Transaction History</button></a>
+        <a href="history.php"><button type="button" class="btn btn-dark btn-lg mb-3">Transaction History</button></a>
     </div>
     </div>
 
@@ -153,22 +144,23 @@ if(isset($_POST['submit']))
             ?>
             <form method="post" name="tcredit" class="tabletext" ><br>
         <div>
-            <table class="table table-striped table-hover">
-                <tr style="color : black;" class="table-primary">
-                    <th class="text-center">Id</th>
-                    <th class="text-center">Name</th>
-                    <th class="text-center">Email</th>
-                    <th class="text-center">Balance</th>
-                </tr>
-                <tr style="color : black;">
-                    <td class=" text-center py-2"><?php echo $rows['id'] ?></td>
-                    <td class=" text-center py-2"><?php echo $rows['name'] ?></td>
-                    <td class=" text-center py-2"><?php echo $rows['email'] ?></td>
-                    <td class=" text-center py-2"><?php echo $rows['balance'] ?></td>
-                </tr>
-            </table>
-        </div>
-        <h2 class="text-center pt-4" style="color : black;">Transer Money Here !</h2>
+        <div class="display_table">
+                 <h1>Customer Details</h1>
+                 <div class="center_div">
+               <div class="table-responsive">
+                   <table>
+                       <thead>
+                           <tr>
+                               <th>Name</th>
+                               <th>ID</th>
+                               <th>Email</th>
+                               <th>Balance</th>
+                               <th>operation</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+        <h2 class="text-center pt-4" style="color : black;">Transfer Money Here !</h2>
         <label style="color : black;"><strong>Transfer To:</strong></label>
         <select name="to" class="form-control" required>
             <option value="" disabled selected>Choose</option>
@@ -206,33 +198,22 @@ if(isset($_POST['submit']))
     </div>    
 
 
-    <!-- footer -->
-
-    <div class="foot">
-        <footer class="bg-light text-center text-lg-start">
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                © 2021 Copyright - Made with 🧡 by Sumit Vajarinkar :
-                <a class="text-dark" href="https://www.thesparksfoundationsingapore.org/" target="_blank"> The Sparks
-                    Foundation <img src="logos/tsf.png" alt="" width="40" height="35"></a>
-            </div>
-            <!-- Copyright -->
-        </footer>
-    </div>
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    -->
-</body>
-
+        <!-- footer -->
+        <div class="foot">
+          <footer class="text-center text-white bg-dark">
+                
+                <!-- Copyright -->
+                <div class="text-center p-3"  style= "background-color: #5E11A3">
+                    © 2021 Copyright - Made with 🧡 by Saloni Raorane :
+                    <a class="text-dark" href="https://www.thesparksfoundationsingapore.org/" target="_blank"> The Sparks Foundation <img src="images/tsf.png" alt="" width="40" height="35"></a>
+                </div>
+               <!-- Copyright -->
+            </footer>
+        </div>
+        
+        
+        
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </body>
 </html>
