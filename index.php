@@ -26,7 +26,7 @@
                     <span class="navbar-toggler-icon" style="background:white;"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-8 mb-lg-0">
+                    <ul class="navbar-nav">
                         <li class="nav-item py-3">
                             <a href="index.php" class="nav-link text-white"><strong>About</strong></a></li>
                         <li class="nav-item py-3">
