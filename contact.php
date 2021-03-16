@@ -42,15 +42,13 @@
 
           <!--contact starts-->
         <class class="welcome">
-            <a href="#" class="navbar-brand font-weight-bold text-white text-center">
-                <h2><strong>We are here to help you !</strong><img src="images/trust.webp" alt="Bank" width="75" height="75"></h2>
+            <a href="#" class="navbar-brand font-weight-bold text-white text-center"><h2><strong>We are here to help you !</strong><img src="images/trust.webp" alt="Bank" width="75" height="75"></h2>
         </class>
             
             <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offet-md-2-col col-1">
-                    <form action="/action_page.php">
-                        <div class="form-group">
+                    <div class="form-group">
                           
                           <input type="text" class="form-control" placeholder="Enter name" id="username" required autocomplete="off">
                         </div>
