@@ -61,8 +61,9 @@
                             <label for="comment">Comment:</label>
                             <textarea class="form-control" rows="4" id="comment" placeholder="Your Comments"></textarea>
                         </div>
-                        <div class="formbutton" style="display: flex;justify-content: center;">
-                        <button type="submit" >Submit</button></div>
+                        <div class="d-grip gap-2 col-6 mx-auto text-center p-3 mb-2">
+                            <a href="money.php"><button type="button" class="btn btn-warning btn-lg mb-3">SUBMIT</button></a>
+                        </div>
                       
                     </form>
                 </div>
