@@ -27,14 +27,14 @@
                     <ul class="navbar-nav me-auto mb-8 mb-lg-0">
                         <li class="nav-item py-3">
                             <a href="index.php" class="nav-link text-white"><strong>About</strong></a></li>
-                        <li class="nav-item dropdown py-3">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: bold;"><strong>Actions</strong></a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item py-3" href="money.php">Money Transfer</a></li>
-                            </ul>
+                        <li class="nav-item py-3">
+                            <a class="nav-link text-white" href="users.php"style="font-weight: bold;"><strong>Money Transfer</strong></a>
                         </li>
                         <li class="nav-item py-3">
-                            <a class="nav-link" href="contact.php"style="font-weight: bold;"><strong>Contact Us</strong></a>
+                            <a class="nav-link text-white" href="history.php"style="font-weight: bold;"><strong>Transfer History</strong></a>
+                        </li>
+                        <li class="nav-item py-3">
+                            <a class="nav-link text-white" href="contact.php"style="font-weight: bold;"><strong>Contact Us</strong></a>
                         </li>
                     </ul>
                  </div>
