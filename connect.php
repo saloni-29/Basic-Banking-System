@@ -1,27 +1,19 @@
 <?php
-// Connecting to the Database
-$servername = "localhost";
-$username = "cuatomerdetails";
-$password = "";
-$dbname = "bankuser";
-
-// Create a connection
-$conn = mysqli_connect($servername, $username, $password,$dbname);
-
-
-if($conn)
-//echo "Connection successful";
-{
-    <?php
-    <script>
-        alert('Connection Successful');
-    </script>
-    
-}
-else
-{
-    echo "No connection";
-    die("no connection".mysqli_connect_error());//exit
-}
-?>
+function OpenCon()
+ {
+ $dbhost = "localhost";
+ $dbuser = "customerdetails";
+ $dbpass = " ";
+ $db = "bankuser";
+ 
+ $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
+ 
+ return $conn;
+ }
+ 
+function CloseCon($conn)
+ {
+ $conn -> close();
+ }
+   
 ?>
