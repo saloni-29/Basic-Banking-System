@@ -1,7 +1,9 @@
 <?php
- $dbuser = "customerdetails";
- $dbpass = "1234";
+ $dbuser = "root";
+ $dbpass = " ";
  $db = "bankuser";
 
- $conn = new mysqli('localhost', $dbuser, $dbpass,$db) 
+ $conn = new mysqli('localhost', $dbuser, $dbpass,$db)
+  
+  echo"Great Work!!!"
   ?>
