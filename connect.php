@@ -3,7 +3,7 @@
  $dbpass = " ";
  $db = "bankuser";
 
- $conn = new mysqli('localhost', $dbuser, $dbpass,$db)
-  
-  echo"Great Work!!!"
-  ?>
+ $conn = new mysqli('localhost', $dbuser, $dbpass,$db) or die("Connect failed");
+
+ echo great work!!!
+ ?>
